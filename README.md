@@ -30,32 +30,6 @@
 - `RepositoryFactory` - абстрактная фабрика
 - `InMemoryRepositoryFactory` - конкретная реализация
 
-## Структура проекта
-go/sample-task/
-├── cmd/
-│ └── main.go # Точка входа
-├── internal/
-│ ├── domain/ # Доменные сущности
-│ │ ├── student.go # Класс Студент
-│ │ └── exam.go # Класс Экзамен (с очередью)
-│ ├── repository/ # Работа с данными
-│ │ ├── repository.go # Интерфейсы
-│ │ └── student_repository.go # Реализация
-│ ├── service/ # Бизнес-логика
-│ │ └── exam_service.go # Сервис экзаменов
-│ ├── factory/ # Паттерны проектирования
-│ │ └── abstract_factory.go # Abstract Factory
-│ └── polymorphism/ # Демонстрация полиморфизма
-│ └── ad_hoc_demo.go # Ad hoc полиморфизм
-├── pkg/
-│ └── diagrams/
-│ └── context_diagram.txt # Контекстная диаграмма
-├── data/
-│ └── students.txt # Данные студентов
-├── go.mod # Модуль Go
-├── go.sum # Зависимости
-└── README.md # Документация
-
 
 ## 5. Требования
 - Go 1.21 или выше
